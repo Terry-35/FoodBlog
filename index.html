@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Eats - Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" id="homeLink">Home</a></li>
+        <!-- <li><a href="index.html" id="recipesLink">Recipes</a></li> -->
+        <li><a href="contact.html" id="contactLink">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Content: Displayed when no recipe is selected -->
+  <main id="homeContent">
+    <!-- Hero Section with Slider -->
+    <section class="hero">
+      <h1>Welcome to Healthy Eats</h1>
+      <p>Your source for fresh and natural recipes</p>
+      <div class="image-slider">
+        <img src="images/slider1.jpg" alt="Delicious Food" />
+      </div>
+    </section>
+
+    <!-- Gallery of Recipe Cards -->
+    <section class="gallery">
+      <h2>Featured Recipes</h2>
+      <div class="card-container">
+        <!-- Recipe Card 1 -->
+        <div class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/recipe1.jpg" alt="Avocado Toast" />
+              <h3>Avocado Toast</h3>
+            </div>
+            <div class="card-back">
+              <p>A delicious twist on a classic breakfast favorite.</p>
+              <button onclick="window.location.href='index.html?recipe=avocado-toast'">
+                View Recipe
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Recipe Card 2 -->
+        <div class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/recipe2.jpg" alt="Quinoa Salad" />
+              <h3>Quinoa Salad</h3>
+            </div>
+            <div class="card-back">
+              <p>A refreshing salad packed with protein and vitamins.</p>
+              <button onclick="window.location.href='index.html?recipe=quinoa-salad'">
+                View Recipe
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Recipe Card 3 -->
+        <div class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/recipe3.jpg" alt="Berry Smoothie" />
+              <h3>Berry Smoothie</h3>
+            </div>
+            <div class="card-back">
+              <p>Boost your energy with this nutrient-rich smoothie.</p>
+              <button onclick="window.location.href='index.html?recipe=berry-smoothie'">
+                View Recipe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Recipe Content: Displayed when a recipe is selected (hidden by default) -->
+  <main id="recipeContent" style="display: none;">
+    <article class="recipe-detail">
+      <h1 id="recipeTitle">Recipe Title</h1>
+      <img id="recipeImage" src="" alt="Recipe Image" />
+      <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul id="ingredientsList">
+          <li>Loading ingredients...</li>
+        </ul>
+      </section>
+      <section class="instructions">
+        <h2>Instructions</h2>
+        <ol id="instructionsList">
+          <li>Loading instructions...</li>
+        </ol>
+      </section>
+      <!-- Back to Home Button -->
+      <button onclick="window.location.href='index.html'">Back to Home</button>
+    </article>
+  </main>
+
+  <footer>
+    <section class="contact-footer">
+      <h3>Get in Touch</h3>
+      <p>
+        Have a question or want to share your own recipes?
+        <a href="contact.html">Contact us</a>!
+      </p>
+    </section>
+    <p>&copy; 2025 Healthy Eats. All rights reserved.</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+For this Healthy Eats website, the design was centered around minimalism and responsiveness. I selected a fresh color palette featuring greens and soft neutrals to evoke a natural, healthy vibe. The layout includes a simple navigation bar, a prominent hero slider, and interactive recipe cards that flip on hover to reveal additional details, ensuring an engaging user experience.
+
+JavaScript was used to implement key features such as an auto-rotating image slider, dynamic recipe loading based on URL parameters, and form validation for the contact form. This interactivity enhances usability and ensures users receive immediate feedback on their actions.
+
+During development, one challenge was managing dynamic content within a single page while keeping the code modular. I overcame this by separating the JavaScript functionalities and testing them individually. For deployment, I pushed the code to a Git repository and then linked the repository to Netlify. Netlify automatically built and deployed the project, offering a fast and reliable hosting solution with continuous deployment support.
